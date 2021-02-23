@@ -1,545 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="img/logo.jpeg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="img/logo.jpeg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Bram</title>
-    
+
     <style>
+      .background-blue {
+        background-color: #0086b3;
+        opacity: 0.8;
+        padding-top: 100px;
+        color: white;
+      }
+      .header {
+        background-image: url("img/back.webp");
+      }
+      .img-stack {
+        width: 100px;
+        filter: grayscale(100%);
+      }
 
-        .background-blue{
-            background-color: #0086b3; 
-            opacity: 0.8;
-            padding-top: 100px;
-            color: white;
-        }
-        .header{
-            background-image: url('img/back.webp');
-        }
-        .img-stack{
-            width: 100px;
-            filter: grayscale(100%);
-        }
+      .btn-stack {
+        border-radius: 25px;
+        border: 0.2rem solid black;
+      }
 
-        .btn-stack{
-            border-radius: 25px;
-            border: .2rem solid black;
-
-        }
-
-        button{
-            font-size: 12px;
-        }
-        .background-blue h1{
-            font-size: 4rem;
-        }
-        .background-blue h2{
-            font-size: 2rem;
-        }
-
-
-
-
+      button {
+        font-size: 12px;
+      }
+      .background-blue h1 {
+        font-size: 4rem;
+      }
+      .background-blue h2 {
+        font-size: 2rem;
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
-
-
-
+  <body>
     <section class="header">
-                <div style="height: 500px;" class="background-blue">
-                    <div class="">
-                        <div class="text-center">
-                            <h1> <b>JORAM BRAMUEL</b> </h1>
-                            <h2 style="color: rgb(252, 247, 247);">Software Developer</h2>
-                        </div>
-        
-                        <button class="btn btn-default btn-lg  btn-stack"
-                            style="padding: 1rem;  border: .25rem solid white; border-radius: 30px; color: white; margin: auto; display: block;">Download Resume'</button>
-        
-        
-                    </div>
+      <div style="height: 500px" class="background-blue">
+        <div class="">
+          <div class="text-center">
+            <h1><b>JORAM BRAMUEL</b></h1>
+            <h2 style="color: rgb(252, 247, 247)">Software Developer</h2>
+          </div>
 
-                </div>
+          <button
+            class="btn btn-default btn-lg btn-stack"
+            style="
+              padding: 1rem;
+              border: 0.25rem solid white;
+              border-radius: 30px;
+              color: white;
+              margin: auto;
+              display: block;
+            "
+          >
+            Download Resume'
+          </button>
+        </div>
+      </div>
     </section>
     <section class="about">
-        <div class="container-fluid">
-            <div style="padding-top: 100px; padding-bottom: 100px;" >
-
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3>About me</h3>
-                        <div style="width:150px;">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-8">
-                        <p>Hi, I am Joram Bramuel a Computer Scientist based in Nairobi, Kenya. I am enthustiatic about addressing real world problems through code.</p>
-                    </div>
-                </div>
-
-    
+      <div class="container-fluid">
+        <div style="padding-top: 100px; padding-bottom: 100px">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>About me</h3>
+              <div style="width: 150px">
+                <hr />
+              </div>
             </div>
+            <div class="col-xs-12 col-sm-8">
+              <p>
+                Hi, I am Joram Bramuel a Computer Scientist based in Nairobi,
+                Kenya. I am enthustiatic about addressing real world problems
+                through code.
+              </p>
+            </div>
+          </div>
         </div>
-
+      </div>
     </section>
 
     <section>
-            <div class="jumbotron">
-                <div class="container-fluid">
-                    <h2 class="text-center">Experience</h2>
-
-
-                  <div class="row mt-4 mb-4">
-                    <div class="col-sm-3 text-muted">
-                        <h4>Digitaleo</h4>
-                    </div>
-                    <div class="col-sm-3">
-                        
-                        <p style="color: #33cc33;">2019/10/02 - date</p>
-
-                    </div>
-                    <div class="col-sm-6">
-
-                    <div class="card">
-
-                        <div class="card-body">
-                            <h5 class="text-muted" >Fullstack developer</h5>
-                            <ul>
-                                <li>Converting client web applications into Progressive Website Application (PWAs) for better client experience</li>
-                                <li>Lead developer for several projects</li>
-                                <li>Responsble for code review for junior developers</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-
-
-              <div class="row mt-4 mb-4">
-                <div class="col-sm-3 text-muted">
-                    <h4>LightStorm Technologies</h4>
-                </div>
-                <div class="col-sm-3">
-                    <p style="color: #33cc33;">2018/09/04 - 2019/03/17</p>
-                </div>
-                <div class="col-sm-6">
-                <div class="card">
-
-                
-                    <div class="card-body">
-                        <h5 class="text-muted" > Backend developer</h5>
-                        <ol>
-                            <li>Developed backend codebase for website applications:
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>MongoDB</li>
-                                    <li>ExpressJs</li>
-                                </ul>
-                            </li>
-                            <li>API design using new technologies</li>
-                            <li>Integrating Machine Learning capabilities into website application</li>
-                        </ol>
-
-                    </div>
-                </div>
-            </div>
-
-          </div>
-
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <h2 class="text-center">Experience</h2>
 
           <div class="row mt-4 mb-4">
             <div class="col-sm-3 text-muted">
-                <h4>Zalego Institute</h4>
+              <h4>Digitaleo</h4>
+            </div>
+            <div class="col-sm-3">
+              <p style="color: #33cc33">2019/10/02 - date</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="text-muted">Fullstack developer</h5>
+                  <ul>
+                    <li>
+                      Converting client web applications into Progressive
+                      Website Application (PWAs) for better client experience
+                    </li>
+                    <li>Lead developer for several projects</li>
+                    <li>Responsble for code review for junior developers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-4">
+            <div class="col-sm-3 text-muted">
+              <h4>LightStorm Technologies</h4>
+            </div>
+            <div class="col-sm-3">
+              <p style="color: #33cc33">2018/09/04 - 2019/03/17</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="text-muted">Backend developer</h5>
+                  <ol>
+                    <li>
+                      Developed backend codebase for website applications:
+                      <ul>
+                        <li>NodeJS</li>
+                        <li>MongoDB</li>
+                        <li>ExpressJs</li>
+                      </ul>
+                    </li>
+                    <li>API design using new technologies</li>
+                    <li>
+                      Integrating Machine Learning capabilities into website
+                      application
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4 mb-4">
+            <div class="col-sm-3 text-muted">
+              <h4>Zalego Institute</h4>
             </div>
 
             <div class="col-sm-3">
-                
-                <p style="color: #33cc33;" >2018/01/10 to 2018/09/11</p>
+              <p style="color: #33cc33">2018/01/10 to 2018/09/11</p>
             </div>
             <div class="col-sm-6">
-            <div class="card">
-
-            
+              <div class="card">
                 <div class="card-body">
-                    <h5 class="text-muted" > Software Developer</h5>
-                    <ol>
-                        <li>Writing re-usable frontend code</li>
-                        <li>Collaborating with UX designers for better UI design</li>
-                        <li>Database engineer:
-                            <ul>
-                                <li>Using Object Relation Mapper(Sequalize) for generic use of different databases(MySQL, PostgreSQL, Mariadb) using a single codebase</li>
-                                <li>MongoDB</li>
-
-                            </ul>
+                  <h5 class="text-muted">Software Developer</h5>
+                  <ol>
+                    <li>Writing re-usable frontend code</li>
+                    <li>
+                      Collaborating with UX designers for better UI design
+                    </li>
+                    <li>
+                      Database engineer:
+                      <ul>
+                        <li>
+                          Using Object Relation Mapper(Sequalize) for generic
+                          use of different databases(MySQL, PostgreSQL, Mariadb)
+                          using a single codebase
                         </li>
-
-                    </ol>
-
+                        <li>MongoDB</li>
+                      </ul>
+                    </li>
+                  </ol>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-      </div>
-
-      <div class="row mt-4 mb-4">
-        <div class="col-sm-3  text-muted">
-            <h4>Alloha Data Analytics Centre</h4>
-        </div>
-        <div class="col-sm-3">
-            <p style="color: #33cc33;">2018/09/17</p>
-        </div>
-        <div class="col-sm-6">
-
-        <div class="card">
-
-            <div class="card-body">
-                <h5 class="text-muted">Developer</h5>
-                <ul>
-                    <li>Image categorization algorithmn using machine learning</li>
-                    <li>Developed search engine using natural language processing for a blog site</li>
+          <div class="row mt-4 mb-4">
+            <div class="col-sm-3 text-muted">
+              <h4>Alloha Data Analytics Centre</h4>
+            </div>
+            <div class="col-sm-3">
+              <p style="color: #33cc33">2018/09/17</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="text-muted">Developer</h5>
+                  <ul>
+                    <li>
+                      Image categorization algorithmn using machine learning
+                    </li>
+                    <li>
+                      Developed search engine using natural language processing
+                      for a blog site
+                    </li>
                     <li>Developed a chatbot</li>
-
-                </ul>
-
-            </div>
-        </div>
-    </div>
-
-  </div>
-
-                  <div class="row mt-4 mb-4">
-                    <div class="col-sm-3  text-muted">
-                        <h4>Victech, Inc</h4>
-                    </div>
-                    <div class="col-sm-3">
-                        <p style="color: #33cc33;">2017/03/15</p>
-                    </div>
-                    <div class="col-sm-6">
-
-                    <div class="card">
-
-                        <div class="card-body">
-                            <h5 class="text-muted">Developer</h5>
-                            <ul>
-                                <li>Collaborating with senior developers to build web applications</li>
-                                <li>Fronted development in AngularJS</li>
-                                <li>Search engine optimization for developed websites(SEO)</li>
-                                <li>Developing mobile fast and friendly web applications</li>
-                                <li>Developing desktop applications using ElectronJS</li>
-                            </ul>
-
-                        </div>
-                    </div>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="row mt-4 mb-4">
+            <div class="col-sm-3 text-muted">
+              <h4>Victech, Inc</h4>
+            </div>
+            <div class="col-sm-3">
+              <p style="color: #33cc33">2017/03/15</p>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="text-muted">Developer</h5>
+                  <ul>
+                    <li>
+                      Collaborating with senior developers to build web
+                      applications
+                    </li>
+                    <li>Fronted development in AngularJS</li>
+                    <li>
+                      Search engine optimization for developed websites(SEO)
+                    </li>
+                    <li>
+                      Developing mobile fast and friendly web applications
+                    </li>
+                    <li>Developing desktop applications using ElectronJS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" style="padding-bottom: 50px">
+        <h2 class="text-center">Education</h2>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="col">
+                  <h3>Maseno University</h3>
+                  <h6 class="text-muted">
+                    Bachelor of Science in Computer Science
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="jumbotron">
+        <h2 class="text-center">Sample Projects</h2>
+        <div class="card-deck mt-4 mb-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/kikapu.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Kikapu express</h3>
+              <p class="card-text">
+                An e-commerce application with a scandinavian design layout.
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >MERN StacK [MongoDB ExpressJs ReactJS NodeJS]</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="img/goresearch.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h3 class="card-title">GO|Research</h3>
+              <p class="card-text">
+                Website application designed to ease research for undergraduate,
+                post-graduate, Masters and PhD students
+              </p>
+              <p class="card-text">
+                <small class="text-muted"
+                  >MongoDB | ReactJS | ExpressJs | NodeJS</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck mt-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/steph.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h2 class="card-title">MemesZ</h2>
+                <p class="card-text">
+                    A website application for doing search queries for media queries.
+
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">ReactJS | DJango | Redux</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/jpc.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Justice and Peace Center</h2>
+                <p class="card-text">An NGO website built for the sole purpose of creating awareness and collecting donation across the globe.
+                    It is fully customized to work on low internet areas using new technologies and nextgen file formats
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">ReactJS | NodeJS | ExpressJs</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck mt-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/iSchool.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h2 class="card-title">iSchool</h2>
+                <p class="card-text">
+                  Website application to facilitate online learning of STEM
+                  program(Science, Technology and Mathematics)
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">ReactJS | NodeJS</small>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/jilas.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h2 class="card-title">JilasAfro Shop</h2>
+                <p class="card-text">An ecommerce website built using laravel</p>
+                <p class="card-text">
+                  <small class="text-muted">Bootstrap | Laravel</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+
+        
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="text-center">
+          <h2>Skills</h2>
+          <h4>Web Development</h4>
+        </div>
+
+        <div class="row" style="padding-top: 10px; padding-bottom: 10px">
+          <div class="col-sm-2 text-muted">
+            <h4>Frontend</h4>
+          </div>
+          <div class="col-sm-10">
+            <div class="d-flex flex-wrap bd-highlight">
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  ReactJS
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">HTML5</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">CSS3</button>
               </div>
 
-                </div>
-                
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">Sass</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  MaterialUI
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Bootstrap
+                </button>
+              </div>
             </div>
-
-    </section>
-
-    <section>
-        <div class="container" style="padding-bottom: 50px;">
-            <h2 class="text-center">Education</h2>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                                <div class="col">
-                                    <h3>Maseno University</h3>
-                                    <h6 class="text-muted">Bachelor of Science in Computer Science</h6>
-        
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+          </div>
         </div>
-    </section>
 
-    <section>
-        <div class="jumbotron">
-            <h2 class="text-center" > Sample Projects</h2>
-            <div class="card-deck mt-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/kikapu.webp" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title">Kikapu express</h3>
-                        <p class="card-text">An e-commerce application with a scandinavian design layout.</p>
-                        <p class="card-text"><small class="text-muted">MERN StacK [MongoDB ExpressJs ReactJS
-                                NodeJS]</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    
-                    <img class="card-img-top" src="img/goresearch.webp" alt="Card image cap">
-                    <div class="card-body">
-                        <h3 class="card-title">GO|Research</h3>
-                        <p class="card-text">Website application designed to ease research for undergraduate,
-                            post-graduate, Masters and PhD students</p>
-                        <p class="card-text"><small class="text-muted">MongoDB | ReactJS | ExpressJs | NodeJS</small></p>
-                    </div>
-                </div>
+        <div class="row" style="padding-top: 10px; padding-bottom: 10px">
+          <div class="col-sm-2 text-muted">
+            <h4>Backend</h4>
+          </div>
+          <div class="col-sm-10">
+            <div class="d-flex flex-wrap bd-highlight">
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">NodeJS</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">DJango</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  ExpressJs
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  GraphQL
+                </button>
+              </div>
 
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Laravel
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">Flask</button>
+              </div>
             </div>
-
-            <div class="card-deck mt-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/iSchool.webp" alt="Card image cap">
-                    <div class="card-body">
-                        <h2 class="card-title">iSchool</h2>
-                        <p class="card-text">Website application to facilitate online learning of STEM
-                            program(Science, Technology and Mathematics)</p>
-                        <p class="card-text"><small class="text-muted">ReactJS | NodeJS</small></p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="img/jilas.webp" alt="Card image cap">
-                    <div class="card-body">
-                        <h2 class="card-title">JilasAfro Shop</h2>
-                        <p class="card-text">An ecommerce website built using laravel</p>
-                        <p class="card-text"><small class="text-muted">Bootstrap | Laravel</small></p>
-                    </div>
-                </div>
-
-            </div>
-
-
-
+          </div>
         </div>
-    </section>
 
-    <section>
-        <div class="container" >
-            <div class="text-center">
-                <h2>Skills</h2>
-                <h4>Web Development</h4>
+        <div class="row" style="padding-top: 10px; padding-bottom: 10px">
+          <div class="col-sm-2 text-muted">
+            <h4>Databases</h4>
+          </div>
+          <div class="col-sm-10">
+            <div class="d-flex flex-wrap bd-highlight">
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  MongoDB
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">MySQL</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  PostgreSQL
+                </button>
+              </div>
             </div>
-
-
-            <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
-                <div class="col-sm-2 text-muted">
-                    <h4>Frontend</h4>
-                </div>
-                <div class="col-sm-10">
-                    <div class="d-flex flex-wrap bd-highlight">
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >ReactJS</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >HTML5</button>
-                        </div>                        
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >CSS3</button>
-                        </div>
-
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Sass</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >MaterialUI</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Bootstrap</button>
-                        </div>                        
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="row"  style="padding-top: 10px; padding-bottom: 10px;">
-                <div class="col-sm-2 text-muted">
-                    <h4>Backend</h4>
-                </div>
-                <div class="col-sm-10">
-                    <div class="d-flex flex-wrap bd-highlight">
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >NodeJS</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >DJango</button>
-                        </div>                        
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >ExpressJs</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >GraphQL</button>
-                        </div>
-
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Laravel</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Flask</button>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="row"  style="padding-top: 10px; padding-bottom: 10px;">
-                <div class="col-sm-2 text-muted">
-                    <h4>Databases</h4>
-                </div>
-                <div class="col-sm-10">
-                    <div class="d-flex flex-wrap bd-highlight">
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >MongoDB</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >MySQL</button>
-                        </div>                        
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >PostgreSQL</button>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="row"  style="padding-top: 20px; padding-bottom: 20px;">
-                <div class="col-sm-2 text-muted">
-                    <h4>Design</h4>
-                </div>
-                <div class="col-sm-10">
-                    <div class="d-flex flex-wrap bd-highlight">
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Figma</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Adobe Photoshop</button>
-                        </div>                        
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >CorelDRAW</button>
-                        </div>
-
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="text-center">
-                <h3>Data Science</h3>
-            </div>
-
-            <div class="row"  style="padding-top: 10px; padding-bottom: 10px;">
-
-
-                <div class="col-sm-12">
-                    <div class="d-flex flex-wrap bd-highlight">
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack "  >NumPy</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >OpenCV</button>
-                        </div>    
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Pandas</button>
-                        </div>                    
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Tensorflow</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >PyTorch</button>
-                        </div>
-
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Scikit Learn</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >TensorflowJS</button>
-                        </div>
-                        <div class="order-3 p-2 bd-highlight">
-                            <button class="btn btn-default btn-md btn-stack"  >Matplotlib</button>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-
+          </div>
         </div>
-        
+
+        <div class="row" style="padding-top: 20px; padding-bottom: 20px">
+          <div class="col-sm-2 text-muted">
+            <h4>Design</h4>
+          </div>
+          <div class="col-sm-10">
+            <div class="d-flex flex-wrap bd-highlight">
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">Figma</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Adobe Photoshop
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  CorelDRAW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3>Data Science</h3>
+        </div>
+
+        <div class="row" style="padding-top: 10px; padding-bottom: 10px">
+          <div class="col-sm-12">
+            <div class="d-flex flex-wrap bd-highlight">
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">NumPy</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">OpenCV</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">Pandas</button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Tensorflow
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  PyTorch
+                </button>
+              </div>
+
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Scikit Learn
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  TensorflowJS
+                </button>
+              </div>
+              <div class="order-3 p-2 bd-highlight">
+                <button class="btn btn-default btn-md btn-stack">
+                  Matplotlib
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-        <div class="jumbotron">
-            <div class="container-fluid">
-                <div class="row ">
-
-
-                    <div class="col">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/1200px-Node.js_logo_2015.svg.png" class="img-stack" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-6.png" class="img-stack" alt="">
-                    </div>
-
-                    <div class="col">
-                        <img src="https://cdn.worldvectorlogo.com/logos/mongodb.svg" class="img-stack" alt="">
-                    </div>
-
-                    
-
-                </div>
+      <div class="jumbotron">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/1200px-Node.js_logo_2015.svg.png"
+                class="img-stack"
+                alt=""
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://pngimage.net/wp-content/uploads/2018/05/express-js-png-6.png"
+                class="img-stack"
+                alt=""
+              />
             </div>
 
-            
+            <div class="col">
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/mongodb.svg"
+                class="img-stack"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <footer style="background-color: #0086b3;color: white; padding: 25px;">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h6>JORAMMANOAH1@GMAIL.COM</h6>
-                </div>
-                <div class="col-sm-4">
-                    <address>
-                        <strong>Alloha, Inc.</strong><br>
-                        Umoja phase 1, Egesa Villa<br>
-                        Nairobi, NA 20300<br>
-                        <abbr title="Phone">P:</abbr> (254) 99-980-846
-                      </address>
-                      
-                      <address>
-                        <strong>j Wells</strong><br>
-                        <a href="jorammanoah1@gmail.com">jorammanoah1@gmail.com</a>
-                      </address>
-                </div>
-                <div class="col-sm-4">
-                    <div style="display: flex; justify-content: center;">
-                        <a href="https://www.facebook.com/joram.bramuel.3" style="color: white;"><span class="fa fa-facebook"></span></a>
-                        <a href="https://twitter.com/jay50429176" style="color: white;"><span class="fa fa-twitter" style="padding-right: 2.5rem; padding-left: 2.5rem;"></span>                        </a>
-                        <a href="https://www.linkedin.com/in/joram-bramuel-2721a2196/" style="color: white;"><span class="fa fa-linkedin" style="padding-right: 2.5rem;"></span>                        </a>
-                       <a href="https://github.com/bramuel" style="color: white;"> <span class="fa fa-github" ></span></a>
+    <footer style="background-color: #0086b3; color: white; padding: 25px">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <h6>JORAMMANOAH1@GMAIL.COM</h6>
+          </div>
+          <div class="col-sm-4">
+            <address>
+              <strong>Alloha, Inc.</strong><br />
+              Umoja phase 1, Egesa Villa<br />
+              Nairobi, NA 20300<br />
+              <abbr title="Phone">P:</abbr> (254) 99-980-846
+            </address>
 
-                    </div>
-                    
-                </div>
+            <address>
+              <strong>j Wells</strong><br />
+              <a href="jorammanoah1@gmail.com">jorammanoah1@gmail.com</a>
+            </address>
+          </div>
+          <div class="col-sm-4">
+            <div style="display: flex; justify-content: center">
+              <a
+                href="https://www.facebook.com/joram.bramuel.3"
+                style="color: white"
+                ><span class="fa fa-facebook"></span
+              ></a>
+              <a href="https://twitter.com/jay50429176" style="color: white"
+                ><span
+                  class="fa fa-twitter"
+                  style="padding-right: 2.5rem; padding-left: 2.5rem"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/joram-bramuel-2721a2196/"
+                style="color: white"
+                ><span
+                  class="fa fa-linkedin"
+                  style="padding-right: 2.5rem"
+                ></span>
+              </a>
+              <a href="https://github.com/bramuel" style="color: white">
+                <span class="fa fa-github"></span
+              ></a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"
+  ></script>
 </html>
-
