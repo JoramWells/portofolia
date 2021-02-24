@@ -6,6 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+p{
+  font-size: 18px;
+}
+button {
+  font-size: 12px;
+}
+.img-stack {
+  width: 100px;
+  filter: grayscale(100%);
+}
+h1{
+  text-align: center;
+}
 
 
