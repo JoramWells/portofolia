@@ -54,15 +54,15 @@
 
   <body>
     <section class="header">
-        <div style="height: 300px; background-color: rgb(8,146,208, 0.5);" >
+        <div style="height: 250px; background-color: rgb(8,146,208, 0.5);" >
         <div class="pt-4">
           <div class="text-center">
-            <h1 style="color: rgba(255, 255, 255, 0.8);"> <b>JORAM  .  WELLS</b> </h1>
-            <h3 style="color: rgb(252, 247, 247, 0.8);">Software Developer</h3>
+            <h2 style="color: rgba(255, 255, 255, 0.8);">Welcome...glad you made it!!</h2>
+            <h5 style="color: #282c35;" id="date"></h5>
 
           </div>
 
-          <button
+          <!-- <button
             class="btn btn-default btn-lg btn-stack"
             style="
               padding: .2rem;
@@ -76,9 +76,9 @@
             "
           >
             Download Resume'
-          </button>
+          </button> -->
         </div>
-        <img src="img/me.jpg" style="width: 200px; border-radius: 200px; margin-left: 3rem; display: block; margin: auto; border: solid 5px rgb(252, 247, 247, 0.5);" />
+        <img src="img/me.jpg" style="width: 220px; border-radius: 200px; margin-left: 3rem; display: block; margin: auto; border: solid 5px rgb(252, 247, 247, 0.5);" />
 
       </div>
       
@@ -672,3 +672,10 @@
     crossorigin="anonymous"
   ></script>
 </html>
+<script>
+  
+  var options ={weekday:'long',year:'numeric', month:'short', day:'numeric'}
+  var date1 = new Date()
+  console.log(date1.toLocaleDateString('en-US',options))
+  document.getElementById("date").innerHTML = date1.toLocaleDateString('en-US',options)
+</script>
