@@ -1,0 +1,26 @@
+@import "./header";
+@import "./coding";
+@import "./about";
+@import "./flex";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+p {
+  font-size: 18px;
+}
+button {
+  font-size: 12px;
+}
+.img-stack {
+  width: 100px;
+  filter: grayscale(100%);
+}
+h1 {
+  text-align: center;
+}

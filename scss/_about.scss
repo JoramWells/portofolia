@@ -1,0 +1,24 @@
+.about{
+    margin-top: 4.5rem;
+    &__container{
+        padding: 20px 0px 20px 0px;
+        h2{
+            color: rgba(255,36,0,0.5);
+        }
+        i{
+            color: gray;
+        }
+    }
+    &__social_links{
+        padding-top: 10px;
+        display: flex;
+        margin: auto;
+        display: block;
+        justify-content: space-around;
+        span{
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+    }
+    text-align: center;
+}

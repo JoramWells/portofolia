@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <link rel="icon" href="img/logo.jpeg" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -32,33 +32,21 @@
         padding-top: 100px;
         color: white;
       }
-      .header {
-        background-image: url("img/back.webp");
-      }
-
-
       .btn-stack {
         border-radius: 25px;
         border: 0.2rem solid black;
-      }
-
-
-      .background-blue h1 {
-        font-size: 4rem;
-      }
-      .background-blue h2 {
-        font-size: 2rem;
       }
     </style>
   </head>
 
   <body>
     <section class="header">
-        <div style="height: 350px; background-color: rgb(8,146,208, 0.5);" >
-        <div class="pt-8">
-          <div class="text-center" style="padding-bottom: 10rem;">
-            <h2 style="color: rgba(255, 255, 255, 0.8);"> <b>Welcome...glad you made it!!</b> </h2>
-            <b style="color: #282c35;" id="date"></b>
+        <div class="header__container" >
+          <div class="header__profile">
+            <h2 style="color: rgba(255, 255, 255, 0.8);"> <b>Joram M Bramuel</b> </h2>
+            <i style="color:  #282C35;"> <b>Fullstack Software Developer</b> </i>
+            <br>
+            <!-- <i style="color: #282c35;" id="date"></i> -->
 
           </div>
 
@@ -77,32 +65,36 @@
           >
             Download Resume'
           </button> -->
-        </div>
-        <img src="img/me.jpg" style="width: 220px; border-radius: 200px; margin-left: 3rem; display: block; margin: auto; border: solid 5px rgb(252, 247, 247, 0.5);" />
+        <img src="img/me.jpg" alt="joram_bramuel"/>
 
       </div>
       
     </section>
-    <section class="about" style="margin-top: 6rem;">
-      <div class="container-fluid">
-        <div style="padding-top: 20px; padding-bottom: 20px">
-          <div class="row">
-            <div class="col text-center" >
-              <h4 style="color:  rgba(255,36,0,0.5);"> <b>Joram M Bramuel</b> </h4>
-              <i style="color: #282c35;" class="text-muted">"Full Stack Developer"</i>
-              <br>
-              <div style="display: flex; margin: auto; display: block; justify-content: space-around;">
-                <span class="fa fa-twitter" style="font-size: 1.5rem; padding: 1rem; color: rgb(8,146,208);"></span>
-                <span class="fa fa-github" style="font-size: 1.5rem; padding: 1rem;"></span>
-                <span class="fa fa-linkedin" style="font-size: 1.5rem; padding: 1rem; color: rgb(0,49,83);"></span>
+
+    <!------------------------------------------------------ About Section ----------------------------------------------------->
+    <section class="about">
+      <div class="about__container">
+              <div class="about__social_links">
+                <span class="fa fa-twitter" style=" color: rgb(8,146,208);"></span>
+                <span class="fa fa-github"></span>
+                <span class="fa fa-linkedin" style=" color: rgb(0,49,83);"></span>
               </div>
+      </div>
+    </section>
 
-            </div>
+    <!-- gif mp4 -->
+    <section class="coding">
+      <div class="coding__container">
+      <!-- <img src="img/video-to-gif-converter.gif" alt="gif"> -->
+    <div style="display: flex; flex-direction: column; width: 300px; height: 100px; overflow: scroll;">
+<span>
+  <div id="text" style="color:  #282C35;"></div>
+  <span style="color: gray;"> ~ [<i id="author" style="font-size: .9rem;">
 
+  </i>]</span>
+  </div>
+</span>
 
-          </div>    
-
-        </div>
       </div>
     </section>
 
@@ -677,7 +669,7 @@
     </footer>
   </body>
 
-  <script
+  <!-- <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
@@ -686,12 +678,6 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
+  <script src="./js/quotes_api.js"></script>
 </html>
-<script>
-  
-  var options ={weekday:'long',year:'numeric', month:'short', day:'numeric'}
-  var date1 = new Date()
-  console.log(date1.toLocaleDateString('en-US',options))
-  document.getElementById("date").innerHTML = date1.toLocaleDateString('en-US',options)
-</script>
