@@ -16,8 +16,13 @@ fetch("https://allquotes.herokuapp.com/quotes/rand")
     return response.json();
   })
   .then(function (data) {
+    if(data['text'] === null && data['author'] === null){
+      document.getElementById("author").innerHTML = "loading.."
+    }else{
     document.getElementById("text").innerHTML = data['text']
     document.getElementById("author").innerHTML = data['author']
+    }
+
 
     console.log(data['text']);
     console.log(data['author'])
