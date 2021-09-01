@@ -1,0 +1,18 @@
+$body-bg:#f3f4f7;
+$primary-color: #282C35;
+$secondary-color:#36454f;
+$bold:800;
+$semi-bold:600;
+$lg:2rem;
+$ml:2.3rem;
+$xl:3.5rem;
+$xxl:4rem;
+$md:1.5rem;
+$sm:1rem;
+$mobile:800px;
+
+@mixin mobile{
+    @media (max-width: $mobile){
+        @content
+    }
+}
